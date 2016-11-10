@@ -1,0 +1,6 @@
+---
+applications:
+- name: cf-scheduled-task
+  memory: 512M
+  instances: 1
+  path: target/task.jar
