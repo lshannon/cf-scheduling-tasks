@@ -43,6 +43,7 @@ Connected, tailing logs for app cf-scheduled-task in org cloud-native / space de
 ```
 ### Limitations
 
+This approach does not account for recovery of Jobs that were in progress should the application fail and be covered by PCF in a new container.
 
 ## Shell Version
 
