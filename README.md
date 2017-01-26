@@ -43,9 +43,19 @@ Connected, tailing logs for app cf-scheduled-task in org cloud-native / space de
 ```
 ### Limitations
 
-This approach does not account for recovery of Jobs that were in progress should the application fail and be covered by PCF in a new container.
+This approach does not account for recovery of Jobs that were in progress should the application fail and be covered by PCF in a new container. Spring does provide support for the Quartz scheduling API, which does provide support for stateful jobs:
 
-## Shell Version
+http://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/scheduling/quartz/QuartzJobBean.html
+
+A useful follow on exercise would be to leverage this in a PFC environment.
 
 ## Third Party API
+
+Services such as Iron worker can provide scheduling capabilities abstracted from the runtime of the application:
+
+http://docs.run.pivotal.io/marketplace/services/ironworker.html
+
+Temporize is another example:
+
+http://docs.run.pivotal.io/marketplace/services/temporize.html
 
