@@ -51,7 +51,7 @@ A useful follow on exercise would be to leverage this in a PFC environment.
 
 ## Third Party API
 
-Services such as Iron worker can provide scheduling capabilities abstracted from the runtime of the application:
+Services such as Iron worker can provide a full product offering around scheduling capabilities. As they are consumed via a service broker, the service itself exists outside of the application runtime.
 
 http://docs.run.pivotal.io/marketplace/services/ironworker.html
 
